@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso horario</title>
+    <link rel="stylesheet" href="base.css">
+    <style> 
+        table tr:hover td {
+            background-color: rgb(158, 160, 156);
+        }
+        table thead th {
+            background-color: rgb(5, 5, 5);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="pagina-principal.html" target="_self" title="Confira a pagina principal">Pagina principal</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="sobre-a-clinica.html" target="_self" title="clique e veja a historia da clinica">Sobre a clinica</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="horario-clinica.html" target="_self" title="Clique e veja que dias trabalhamos e os horarios">Horario de atendimento</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="contato-clinica.html" target="_self" title="Entre em contato com a gente">Contato</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="main">
+            <div class="header">
+                <img src="data:image/png;base64,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">
+            </div>
+    
+            <div class="content">
+                <h1>Horário da clinica</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Exames</th>
+                            <th>Segunda a sexta</th>
+                            <th>Sábado</th>
+                            <th>Feriados</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>Pediatria</td>
+                        <td>Oftalmologia</td>
+                        <td>Psicologia</td>
+                        <td>Clinica geral</td>
+                    </tr>
+                    <tr></tr>
+                        <td>9hr - 18hr</td>
+                        <td>9hr - 18hr</td>
+                        <td>9hr - 18hr</td>
+                        <td>9hr - 18hr</td>
+                    </tr>
+                    <tr></tr>
+                        <td>9hr - 16hr</td>
+                        <td>9hr - 16hr</td>
+                        <td>9hr - 16hr</td>
+                        <td>9hr - 16hr</td>
+                    </tr>
+                    <tr>
+                        <td>9hr - 14hr</td>
+                        <td>9hr - 14hr</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+            </div>
+    
+            <div class="footer">
+                <h3>Informações de contato</h3>
+                <p>Numero: (11)99665-3256</p>
+                <p>Email: clinicadecbdD12@gmail.com</p>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
